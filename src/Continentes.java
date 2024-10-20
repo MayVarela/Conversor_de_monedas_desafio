@@ -1,3 +1,5 @@
+import java.util.Map;
+
 public class Continentes extends Mensajes {
     static Mensajes menu = new Mensajes();
 
@@ -20,7 +22,16 @@ public class Continentes extends Mensajes {
                     break;
                 case 4:
                     System.out.println(mensajeEuropa);
-                    double convertirEuros = scanner.nextDouble();
+                    Moneda monedaC = (Moneda) apiConversor.datosApi();
+                    Map<String, Double> conversionRates = monedaC.conversion_rates();
+
+                    String moneda = "EUR";
+                    if (moneda != null) {
+                        double valor = scanner.nextDouble();
+                        CalculosResultado.convertirYMostrarResultado(valor, moneda, conversionRates);
+                    } else {
+                        System.out.println(opcionNoDisponible);
+                    }
                     break;
                 case 9:
                     System.out.println("""
