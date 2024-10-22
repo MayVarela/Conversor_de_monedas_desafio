@@ -1,7 +1,6 @@
 import java.util.Map;
 
 public class Continentes extends Mensajes {
-    static Mensajes menu = new Mensajes();
 
     public void consultaContinente(){
         var eleccionContinente = 0;
@@ -12,13 +11,13 @@ public class Continentes extends Mensajes {
 
             switch (eleccionContinente) {
                 case 1:
-                    switchCaseSudamerica.consultaSudamerica();
+                    consulta.consultaSudamerica();
                     break;
                 case 2:
-                    switchCaseCentroAmerica.consultaCentroAmerica();
+                    consulta.consultaCentroAmerica();
                     break;
                 case 3:
-                    switchCaseNorteAmerica.consultaNorteAmerica();
+                    consulta.consultaNorteAmerica();
                     break;
                 case 4:
                     System.out.println(mensajeEuropa);

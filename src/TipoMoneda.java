@@ -25,12 +25,4 @@ public class TipoMoneda {
             default -> null;
         };
     }
-
-    static String obtenerMonedaNorteAmerica(int eleccionNorteAmerica) {
-        return switch (eleccionNorteAmerica) {
-            case 1 -> "USD";  // Estados Unidos
-            case 2 -> "CAD";  // Canada
-            default -> null;
-        };
-    }
 }
