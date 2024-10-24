@@ -10,13 +10,13 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ApiConversor {
-    public Object datosApi() {
+    public static Object datosApi() {
 
         //variable para uso del gson
-        /*Gson gson = new GsonBuilder()
+        Gson gson = new GsonBuilder()
                 .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
                 .setPrettyPrinting()
-                .create();*/
+                .create();
 
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/c6f9bede6ff0148acda96c49/latest/USD");
         // Cliente Http

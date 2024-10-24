@@ -9,6 +9,7 @@ public class TipoMoneda {
             case 6 -> "PEN";  // Perú
             case 7 -> "PYG";  // Paraguay
             case 8 -> "UYU";  // Uruguay
+            case 9 -> "VES"; //Venezuela
             default -> null;
         };
     }
@@ -22,6 +23,7 @@ public class TipoMoneda {
             case 5 -> "HTG";  // Haiti
             case 6 -> "MXN";  // Mexico
             case 7 -> "NIO";  // Nicaragua
+            case 8 -> "PAB"; //Panama
             default -> null;
         };
     }

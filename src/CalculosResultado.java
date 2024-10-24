@@ -8,7 +8,9 @@ public class CalculosResultado {
         if (conversionRates.containsKey(moneda)) {
             double tasaConversion = conversionRates.get(moneda);
             double valorConvertido = valor / tasaConversion;
-            System.out.println( valor +" "+ moneda + " es igual a " + valorConvertido + " USD");
+            int valorConvertidoEntero = (int) valorConvertido; // Trunca los decimales
+            System.out.println( valor +" "+ moneda + " es igual a " + valorConvertidoEntero + " USD");
+            System.out.println("Valor exacto con decimales " + valorConvertido);
         } else {
             System.out.println("No se pudo encontrar la tasa de conversión para " + moneda);
         }

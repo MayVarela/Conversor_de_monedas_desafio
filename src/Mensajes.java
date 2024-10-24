@@ -21,7 +21,7 @@ public class Mensajes {
                 2. Centro America
                 3. America del Norte
                 4. EUR (Union Europea)
-                9. SALIR
+                9. Cerrar programa
                 -----------------------------------------------------------------
                 """;
     String mensajeSudamerica = """
@@ -37,7 +37,8 @@ public class Mensajes {
                 6. PEN (Sol Peruano)
                 7. PYG (Guarani Paraguayo)
                 8. UYU (Peso Uruguayo)
-                0. Atras
+                9. VES (Bolivar Venezolano)
+                Escribe "salir" para volver al menu principal.
                 -----------------------------------------------------------------
                 """;
     String mensajeCentroAmerica = """
@@ -53,7 +54,7 @@ public class Mensajes {
                 6. MXN (Peso Mexicano)
                 7. NIO (Córdoba nicaragüense)
                 8. PAB (Balboa Panameño)
-                0. Atras
+                Escribe "salir" para volver al menu principal.
                 -----------------------------------------------------------------
                 """;
 
@@ -64,7 +65,7 @@ public class Mensajes {
                 Porfavor elige la moneda base a convertir.
                 1. USD (Dolar Estadounidense)
                 2. CAD (Dolar Canadiense)
-                0. Atras
+                Escribe "salir" para volver al menu principal.
                 -----------------------------------------------------------------
                 """;
 
@@ -73,6 +74,7 @@ public class Mensajes {
                 Europa
                 
                 Digita la cantidad de euros que desea convertir a USD
+                o escribe "salir" para volver al menu principal.
                 -----------------------------------------------------------------
                 """;
 
